@@ -172,7 +172,9 @@ def draw_bounding_box_on_image(image,
              (right, top), (left, top)], width=thickness, fill=color)
   try:
     #font = ImageFont.truetype('arial.ttf', 24)
-    font = ImageFont.load('/usr/share/fonts/arial.ttf')  
+    #font = ImageFont.load('/usr/share/fonts/arial.ttf')  
+    font = ImageFont.truetype("/usr/local/lib/python2.7/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf", 80)
+
   except IOError:
     font = ImageFont.load_default()
 
